@@ -20,7 +20,7 @@ export class RegisterUseCase {
       throw new UserAlreadyExistsError()
     }
 
-    await this.userRepository.create({
+    return await this.userRepository.create({
       name,
       email,
       password_hash,

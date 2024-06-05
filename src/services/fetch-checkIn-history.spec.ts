@@ -17,7 +17,7 @@ describe('Fetch checkIns use case', () => {
       user_id: 'user-01',
     })
     await checkInsRepository.create({
-      gym_id: 'gym-01',
+      gym_id: 'gym-02',
       user_id: 'user-01',
     })
 
@@ -43,7 +43,7 @@ describe('Fetch checkIns use case', () => {
 
     const { checkIns } = await sut.execute({
       userId: 'user_01',
-      page: 1,
+      page: 2,
     })
 
     expect(checkIns).toHaveLength(2)

@@ -1,7 +1,5 @@
 import { describe, it, expect, beforeEach } from 'vitest'
 import { string } from 'zod'
-import { CheckInUseCase } from './check-in'
-import { InMemoryCheckInRepository } from '@/repositories/in-memory/in-memory-check-in'
 import { InMemoryGym } from '@/repositories/in-memory/in-memory-gym'
 import { GymUseCase } from './gym'
 
